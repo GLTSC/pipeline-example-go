@@ -15,8 +15,6 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: hzwq/example-helloserver:${CICD_EXECUTION_SEQUENCE}
-      pushRemote: true
-      registry: hzwq.com:8443
 - name: Deploy
   steps:
   - applyYamlConfig:
